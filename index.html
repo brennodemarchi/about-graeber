@@ -1,93 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <script src="assets/js/bw-effect.js"></script> 
-    <title>About Graeber - A David Graeber Fanpage</title>
+    <meta name="description" content="A tribute website for David Graeber">
+    <meta name="keywords" content="david graeber, graeber, anthropology, anarchism, occupy">
+    <meta name="author" content="Brenno Brandalise Demarchi">
+    <title>Rebel Anthropologist</title>
+    <link rel="stylesheet" href="assets/css/normalize-min.css">
+    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+    <link rel="stylesheet" href="assets/css/style-min.css">
+    <!-- <link rel="stylesheet" href="assets/css/responsive.css"> -->
+    <link rel="stylesheet" href="assets/css/responsive-min.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="logo">          
-                <a href="index.html"><h1>About Graeber</h1></a>
-            </div>
-            <div class="nav-container">
-                <nav>
-                    <ul>
-                        <a href="index.html"><li>Home</li></a>
-                        <a href="#about"><li>About</li></a>
-                        <a href="#publications"><li>Publications</li></a>
-                        <a href="#references"><li>References</li></a>
-                    </ul>
-                </nav>                
-                <!--<a href="#" class="nav-button"><img src="assets/images/icons/noun-menu.png"></a>-->
-            </div>
-        </div>
+    <header class="main-header">          
+        <a href="index.html" class="main-header__title">Rebel Anthropologist</a>
+        <nav class="main-nav">
+            <ul class="main-nav__list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#books">Books</a></li>
+            </ul>
+        </nav>
     </header>
-    <section id="about">
-        <div class="hero-container">
-            <figure class="container profile-figure">
+    <main>
+        <section class="hero">
+            <article class="hero_wrapper">
                 <img src="assets/images/graeber-profile.avif" alt="David Graeber photo" class="hero-image">
-            </figure>
-        </div>
-        <section id="title">
-            <div class="about-title">
-                <h1>About Graeber</h1>
-                <h2>A David Graeber Fanpage</h2>
+                <h1 class="section-title">David Graeber</h1>
+            </article>
+        </section>  
+        <section id="about">
+            <h2 class="section-title">About</h2>
+            <div class="about-wrapper">
+                <article class="about-item">
+                    <h2 class="about-item__title">Personal</h2>
+                    <p class="about-item__text">David Graeber was an American anthropologist and engaged anarchist activist who was born in New York to a working-class Jewish family. Graeber studied at Purchase College and the University of Chicago, where he carried out ethnographic research in Madagascar under the supervision of Marshall Sahlins, obtaining his PhD in 1996. From 1998 to 2005, he was an assistant professor at Yale University, but ended up not having his contract renewed due to a controversial justification from the university, claiming that he did not have the necessary tenure. </p>
+                </article>
+                <article class="about-item">
+                    <h2 class="about-item__title">Militant</h2>
+                    <p class="about-item__text">Graeber's militant political life cannot be detached from his academic life. He was a member of the labor union Industrial Workers of the World (IWW), protested at the World Economic Forum (WEF) in New York City in 2002, supported the 2010 UK student protests, and played an early role in the Occupy Wall Street movement. He was co-founder of the Anti-Capitalist Convergence. </p>
+                </article>
+                <article class="about-item">
+                    <h2 class="about-item__title">Anthropologist</h2>
+                    <p class="about-item__text"> According to Allan Wine (2021), beginning his academic career with issues dear to classical anthropology, such as theories of value, political power and economic history, Graeber broadened the scope of his debates as his work in social movements intensified. This path would lead him to develop critiques of capitalist administration and bureaucracy, corporate exploitation and the place of debt in social institutions. </p>
+                </article>
             </div>
         </section>
-        <section id="description">           
-            <div class="container">
-                <div class="container">
-                    <article class="container column">
-                        <h1>Personal</h1>
-                        <p>David Graeber was an American anthropologist and engaged anarchist activist who was born in New York to a working-class Jewish family. Graeber studied at Purchase College and the University of Chicago, where he carried out ethnographic research in Madagascar under the supervision of Marshall Sahlins, obtaining his PhD in 1996. From 1998 to 2005, he was an assistant professor at Yale University, but ended up not having his contract renewed due to a controversial justification from the university, claiming that he did not have the necessary tenure. </p>
+        <section id="books">
+            <div class="books-wrapper">
+                <h2 class="section-title">Books</h2>
+                <div class="books-grid">
+                    <article class="book-item">
+                        <h3 class="book-title">The Dawn of Everything: A New History of Humanity</h3>
+                        <img src="assets/images/books/dawnofeverything.webp">
                     </article>
-                    <article class="container column">
-                        <h1>Militant</h1>
-                        <p>Graeber's militant political life cannot be detached from his academic life. He was a member of the labor union Industrial Workers of the World (IWW), protested at the World Economic Forum (WEF) in New York City in 2002, supported the 2010 UK student protests, and played an early role in the Occupy Wall Street movement. He was co-founder of the Anti-Capitalist Convergence. </p>
+                    <article class="book-item">
+                        <h3 class="book-title">Bull Shit Jobs: A Theory</h3>
+                        <img src="assets/images/books/bullshitjobs.webp">
                     </article>
-                    <article class="container column">
-                        <h1>Anthropologist</h1>
-                        <p> According to Allan Wine (2021), beginning his academic career with issues dear to classical anthropology, such as theories of value, political power and economic history, Graeber broadened the scope of his debates as his work in social movements intensified. This path would lead him to develop critiques of capitalist administration and bureaucracy, corporate exploitation and the place of debt in social institutions. </p>
+                    <article class="book-item">
+                        <h3 class="book-title">Constituent Imagination: Militant Investigations. Collective Theorization</h3>
+                        <img src="assets/images/books/constituentimagination.webp">
+                    </article>
+                    <article class="book-item">
+                        <h3 class="book-title">Toward an Anthropological Theory of Value: The False Coin of our own Dreams</h3>
+                        <img src="assets/images/books/anthropologyofvalue.webp">
+                    </article>
+                    <article class="book-item">
+                        <h3 class="book-title">Debt: The First 5000 Years</h3>
+                        <img src="assets/images/books/debt.webp">
+                    </article>
+                    <article class="book-item">
+                        <h3 class="book-title">The Democracy Project: A History, A Crisis, A Movement</h3>
+                        <img src="assets/images/books/democracyproject.webp">
+                    </article>
+                    <article class="book-item">
+                        <h3 class="book-title">Direct Action: An Ethnography</h3>
+                        <img src="assets/images/books/directaction.webp">
+                    </article>
+                    <article class="book-item">
+                        <h3 class="book-title">On Kings</h3>
+                        <img src="assets/images/books/onkings.webp">
+                    </article>
+                    <article class="book-item">
+                        <h3 class="book-title">Pirate: Enlightenment, or the Real Libertalia</h3>
+                        <img src="assets/images/books/pirate.webp">
+                    </article>
+                    <article class="book-item">
+                        <h3 class="book-title">Revolution in Rojava: Democratic Autonomy & Women's Liberation in the Middle East</h3>
+                        <img src="assets/images/books/rojava.webp">
+                    </article>
+                    <article class="book-item">
+                        <h3 class="book-title">The Utopia of Rules: On Technology, Stupidity, and the Secrets Joys of Bureaucracy</h3>
+                        <img src="assets/images/books/utopiaofrules.webp">
                     </article>
                 </div>
             </div>
-        </section>
-    </section>
-    <section id="publications">
-        <h1>Books</h1>
-        <div class="book-section">
-            <div><figure class="book-item"><img src="assets/images/books/anthropologyofvalue.webp" onmouseover="turnColor(this)" onmouseout="turnGray(this)"></figure></div>
-            <div><figure class="book-item"><img src="assets/images/books/bullshitjobs.webp" onmouseover="turnColor(this)" onmouseout="turnGray(this)"></figure></div>
-            <div><figure class="book-item"><img src="assets/images/books/constituentimagination.webp" onmouseover="turnColor(this)" onmouseout="turnGray(this)"></figure></div>
-            <div><figure class="book-item"><img src="assets/images/books/dawnofeverything.webp" onmouseover="turnColor(this)" onmouseout="turnGray(this)"></figure></div>
-        </div>
-        <div class="book-section">
-            <div><figure class="book-item"><img src="assets/images/books/debt.webp" onmouseover="turnColor(this)" onmouseout="turnGray(this)"></figure></div>
-            <div><figure class="book-item"><img src="assets/images/books/democracyproject.webp" onmouseover="turnColor(this)" onmouseout="turnGray(this)"></figure></div>
-            <div><figure class="book-item"><img src="assets/images/books/directaction.webp" onmouseover="turnColor(this)" onmouseout="turnGray(this)"></figure></div>
-            <div><figure class="book-item"><img src="assets/images/books/onkings.webp" onmouseover="turnColor(this)" onmouseout="turnGray(this)"></figure></div>
-        </div>
-        <div class="book-section">   
-            <div><figure class="book-item"><img src="assets/images/books/pirate.webp" onmouseover="turnColor(this)" onmouseout="turnGray(this)"></figure></div>
-            <div><figure class="book-item"><img src="assets/images/books/rojava.webp" onmouseover="turnColor(this)" onmouseout="turnGray(this)"></figure></div>  
-            <div><figure class="book-item"><img src="assets/images/books/utopiaofrules.webp" onmouseover="turnColor(this)" onmouseout="turnGray(this)"></figure></div>
-        </div>
-    </section>
-    <section id="references">
-        <div class="references-container flex">
-
-        </div>
-    </section>
-    <footer id="footer">
-        <section id="footer-copyright">
-            <div class="container">
-                <address>Developped by <a href="https://github.com/brennodemarchi/">Brenno B. Demarchi</a></address>
+        <!-- </section>
+        <section id="references">
+            <div class="references-wrapper">
+                <a href="https://www.reddit.com/user/david_graeber/">Reddit</a>
             </div>
-        </section>
+        </section> -->
+    </main>
+    <footer class="footer">
+        <address class="footer__copyright">Developped by <a href="https://github.com/brennodemarchi/">Brenno B. Demarchi</a></address>
     </footer>
 </body>
 </html>

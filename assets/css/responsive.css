@@ -1,0 +1,226 @@
+@media screen and (min-width: 60rem) {
+    /* HEADER */
+    .main-header {
+        background-color: var(--white1);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .main-header__title {
+        margin: 2rem auto;
+        color: var(--darkgray);
+        font-size: 3.4rem;
+    }
+
+    .main-nav {
+        background: var(--darkgray);
+        width: 100%;
+    }
+    
+    .main-nav__list {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        gap: 1.6rem;
+    }
+    
+    .main-nav__list li a{
+        color: var(--white1);
+        text-decoration: none;
+        font-size: 2rem;
+        padding: 1.6rem;
+        background: initial;
+    }
+    
+    .main-nav__list li a:hover{
+        background: var(--red3);
+        transition: all 400ms linear;
+    }
+
+    /* HERO */
+    .hero_wrapper img {
+        box-sizing: border-box;
+        aspect-ratio: 4 / 2;
+    }
+    
+    .hero_wrapper h1 {
+        color: var(--white3);
+        font-weight: var(--font-weight-1);
+        font-family: var(--font-title);
+        font-size: 2.8rem;
+        padding: 3rem 0;
+    }
+
+    /* ABOUT */
+    .about-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: baseline;
+        padding: 1rem;
+    }
+    
+    .about-item{
+        align-items: center;
+        padding: 1rem;
+    }
+    
+    .about-item__title{
+        font-family: var(--font-title);
+        font-size: 2rem;
+        position: relative;
+    }
+    
+    .about-item__text {
+        width: 34ch;
+        font-family: var(--font-text);
+        font-size: 1.6rem;
+        padding: 2rem;
+        line-height: 1.4;
+        margin-top: 1rem;
+        margin-bottom: 1.2rem;
+    }
+
+    /* BOOKS */   
+    .books-wrapper .section-title{
+        margin-top: 4rem;
+    }
+
+    .books-grid {
+        flex-flow: row wrap;
+        justify-content: center;
+        margin-top: 1.8rem;
+    }
+    
+    .book-item {
+        flex-grow: 0;
+        flex-basis: 40rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 4rem;
+    }
+    
+    .book-item h3 {
+        width: 22ch;
+        font-family: var(--font-text);
+        font-size: 1.8rem;
+        margin-bottom: 1.6rem;
+    }
+    
+    .book-item img {
+        box-sizing: border-box;
+        width: 100%;
+        filter: blur(.5px) brightness(1);
+        outline: 0px solid var(--darkgray);
+    }
+
+    .book-item img:hover {
+        filter: blur(0) brightness(1.1);
+        transition: filter 300ms linear;
+        outline: 1px solid var(--darkgray);
+    }
+    
+    /* FOOTER */
+    .footer {
+        padding: 4rem 1.4rem;
+    }
+}
+
+@media screen and (min-width: 75em) {
+    /* HEADER */
+    .main-header__title {
+        margin: 4rem auto;
+        font-size: 4rem;
+    }
+    
+    .main-nav__list {
+        gap: 3rem;
+    }
+    
+    .main-nav__list li a{
+        font-size: 2rem;
+        padding: 1.8rem;
+    }
+
+    /* HERO */
+    .hero_wrapper img {
+        box-sizing: border-box;
+        aspect-ratio: 16 / 8;
+    }
+    
+    .hero_wrapper h1 {
+        font-size: 3rem;
+        padding: 4rem 0;
+    }
+
+    /* ABOUT */
+    #about {
+        min-height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #about .section-title {
+        margin-top: 8rem;
+    }
+
+    .about-wrapper {
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: center;
+        margin-top: 6rem;
+        padding: 0rem;
+    }
+    
+    .about-item__title{
+        font-family: var(--font-title);
+        font-size: 2.4rem;
+    }
+    
+    .about-item__text {
+        width: 40ch;
+        font-size: 1.8rem;
+        padding: 2.4rem 4rem;
+        line-height: 1.5;
+        margin-top: 0rem;
+    }
+
+    /* BOOKS */  
+    #books {
+        margin-top: 16rem;
+    } 
+    .books-grid {
+        flex-flow: row wrap;
+        justify-content: center;
+        margin-top: 8rem;
+    }
+    
+    .book-item {
+        flex-basis: 46rem;
+        justify-content: center;
+        align-items: center;
+        padding: 3.6rem 4.8rem;
+    }
+    
+    .book-item h3 {
+        width: 26ch;
+        font-size: 1.8rem;
+        margin-bottom: 1.6rem;
+    }
+    
+    .book-item img {
+        box-sizing: border-box;
+        width: 100%;
+    }
+    
+    /* FOOTER */
+    .footer {
+        padding: 6rem 0;
+    }
+}
